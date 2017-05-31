@@ -1,0 +1,183 @@
+h1{
+  width:163px;
+  margin: 20px auto;
+}
+
+.eingabezeile{
+  height: 70px;
+  width:40%;
+  margin: 100px auto;
+}
+
+.eingabe{
+  font-size: 24px;
+  color:#333;
+  width: 100%;
+  height: inherit;
+  border: 1px solid #ddd;
+  outline: none;
+  padding:15px;
+  
+}
+
+#eingabe_div{
+box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.15), 4px 7px 20px rgba(0, 0, 0, 0.25);
+}
+
+#ausgabe{
+  position: absolute;
+  left: 10%;
+  top: 20%;
+  margin: 0;
+  width: auto;
+}
+
+.col-md-6{
+  padding: 0;
+}
+
+#list{
+  margin-top: 20px;
+  list-style: none;
+}
+
+#list li{
+  padding:15px;
+/*  border-top: 1px solid #555;
+  border-left:1px solid #555;*/
+}
+
+  #list li p {
+    margin: 0;
+  }
+
+#list li:nth-child(odd){
+  width: 50%;
+  background-color:#ddd;
+  float: left;
+}
+
+#list li:nth-child(even){
+  width: 50%;
+  background-color:#bbb;
+  float: right;
+}
+
+#list li:nth-child(4n +3){
+  background-color: #bbb
+}
+
+#list li:nth-child(4n +4){
+  background-color: #ddd
+}
+
+.view:active,
+.view:focus,
+.view:visited,
+.view:hover{
+  color: white;
+  text-decoration: none;
+}
+
+.btn-view{
+  font-size: 20px;
+  margin: 5px 0 10px 30px;
+}
+
+button[type=submit] {
+  margin: 5px 0 10px 0;
+  height: 40px;
+  font-size: 20px;
+}
+
+#knoepfe{
+  padding: 10px 10px 5px 10px;
+}
+.form-group{
+  margin: 0;
+}
+
+.navi{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#333;
+  font-size: 20px;
+}
+
+.navi li{
+  float:left;
+}
+
+.navi li a{
+  display: block;
+  color:white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navi li a:hover{
+  background-color: #111;
+}
+
+#save{
+  float: right;
+  margin-right: 200px;
+  background-color: rgb(255, 100, 0);
+}
+
+#save_content{
+  margin-top: 100px;
+}
+
+#save_content form{
+  width: 200px;
+  margin: auto;
+}
+
+#save_content button{
+  width: inherit;
+}
+
+.edit{
+  float: right;
+  margin-right: 5px;
+}
+
+.profil{
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.guest_load{
+  font-size: 18px;
+  margin: 5px;
+}
+
+.start_button{
+  font-size: 26px;
+  width: 500px;
+  height: 200px;
+  margin: auto;
+}
+
+.start_button button{
+  width: 500px;
+  height: 100px;
+  background-color: #333;
+  color:#ff6600;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.17), 6px 12px 20px rgba(0, 0, 0, 0.25);
+  
+}
+
+.start_button button:hover{
+  color:white;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.07), 3px 6px 10px rgba(0, 0, 0, 0.10);
+}
+
+#start_button1{
+  margin-top:100px;
+}

@@ -1,0 +1,21 @@
+<div class="content">
+  <div class="row">
+    <div class="col-md-3">
+    </div>
+    <div class="col-md-6">
+      <ul id="list">
+        <li ng-repeat="gast in gaesteListe.items track by $index">
+          <p>Gast Nummer: {{gast.id}}</p>
+          <p>Vorname: {{gast.vorname}}</p>
+          <p>Nachname: {{gast.nachname}}</p>
+          <p>Alter: {{gast.alter}}</p>
+          <button class="btn btn-danger edit" ng-click="gaesteListe.deleteItem(gast.id)">Löschen</button>
+          <a href="#!/gastEdit"><button class="btn btn-primary edit" ng-click="gaesteListe.load(gast.id)">Bearbeiten</button></a>
+
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-md-3"></div>
+  </div>
+</div>

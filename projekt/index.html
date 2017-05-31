@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Gästeliste</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body ng-app="app">
+
+  <ul class="navi">
+    <li><a class="view" href="#!">Startseite</a></li>
+    <li><a class="view" href="#!/gastList">Gästeliste anzeigen</a></li>
+    <li><a class="view" href="#!/gastCreate">Neuen Gast hinzufügen</a></li>
+  </ul>
+
+  <h1>Gästeliste</h1>
+
+
+  <div ng-view></div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular-route.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular-animate.js"></script>
+  <script src="myapp.js"></script>
+  <script src="myapp.config.js"></script>
+  <script src="factorys/factory.js"></script>
+  <script src="directive/directive.js"></script>
+  <script src="controller/GastListCtrl.js"></script>
+  <script src="controller/GastCreateCtrl.js"></script>
+  <script src="controller/GastEditCtrl.js"></script>
+
+</body>
+
+</html>

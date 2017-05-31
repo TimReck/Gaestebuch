@@ -1,0 +1,40 @@
+<div class="eingabezeile">
+  <form ng-submit="gastCreate.add('gastList')" name="myForm" novalidate>
+    <div id="eingabe_div">
+
+      <div class="form-group" ng-class="{ 'has-error' : myForm.VorName.$invalid && !myForm.VorName.$pristine }">
+        <input type="text" class="form-control eingabe" name="VorName" ng-model="gastCreate.vorname" placeholder="Vorname:" required/>
+        <p ng-show="myForm.VorName.$invalid && !myForm.VorName.$pristine" class="help-block">Füllen Sie bitte das Feld aus!</p>
+      </div>
+
+      <div class="form-group" ng-class="{ 'has-error' : myForm.NachName.$invalid && !myForm.NachName.$pristine }">
+        <input type="text" class="form-control eingabe" name="NachName" ng-model="gastCreate.nachname" placeholder="Nachname:" required/>
+        <p ng-show="myForm.NachName.$invalid && !myForm.NachName.$pristine" class="help-block">Füllen Sie bitte das Feld aus!</p>
+      </div>
+
+      <div class="form-group" ng-class="{ 'has-error' : myForm.alter.$invalid && !myForm.alter.$pristine }">
+        <input type="number" class="form-control eingabe" name="alter" ng-model="gastCreate.alter" placeholder="Ihr Alter:" />
+        <p ng-show="myForm.alter.$invalid && !myForm.alter.$pristine" class="help-block">Geben Sie einen gültigen Wert ein!</p>
+      </div>
+
+      <div id="knoepfe">
+        <button class="btn btn-primary" type="submit" ng-disabled="myForm.$invalid">Neuen Gast hinzufügen</button>
+      </div>
+
+
+    </div>
+
+  </form>
+</div>
+
+<div id="ausgabe" class="eingabezeile">
+  <br/>
+
+  <h3>Eintrag</h3>
+  <br>
+  <p>Vorname: {{gastCreate.vorname}}</p>
+  <p>Nachname: {{gastCreate.nachname}}</p>
+  <p>Alter: {{gastCreate.alter}}</p>
+  <br/>
+
+</div>
