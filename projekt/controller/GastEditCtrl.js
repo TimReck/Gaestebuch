@@ -19,6 +19,5 @@
       return httpservice.editItem(id);
     }
 
-
   }
 })();

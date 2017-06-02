@@ -9,17 +9,17 @@
 
   <form name="myForm" novalidate>
     <div class="form-group" ng-class="{ 'has-error' : myForm.VorName.$invalid && !myForm.VorName.$pristine }">
-      <input type="text" class="form-control eingabe" name="VorName" ng-model="gastEdit.item.vorname" placeholder="Vorname" required/>
+      <input type="text" class="form-control eingabe" name="VorName" ng-model="gastEdit.item.vorname" maxlength="30" placeholder="Vorname" required/>
       <p ng-show="myForm.VorName.$invalid && !myForm.VorName.$pristine" class="help-block">Füllen Sie bitte das Feld aus!</p>
     </div>
 
     <div class="form-group" ng-class="{ 'has-error' : myForm.Name.$invalid && !myForm.Name.$pristine }">
-      <input type="text" class="form-control eingabe" name="Name" ng-model="gastEdit.item.nachname" placeholder="Nachname" required/>
+      <input type="text" class="form-control eingabe" name="Name" ng-model="gastEdit.item.nachname" maxlength="30" placeholder="Nachname" required/>
       <p ng-show="myForm.Name.$invalid && !myForm.Name.$pristine" class="help-block">Füllen Sie bitte das Feld aus!</p>
     </div>
 
     <div class="form-group" ng-class="{ 'has-error' : myForm.alter.$invalid && !myForm.alter.$pristine }">
-      <input type="number" class="form-control eingabe" name="alter" ng-model="gastEdit.item.alter" placeholder="Ihr Alter:" />
+      <input type="number" class="form-control eingabe" name="alter" ng-model="gastEdit.item.alter" min="0" max="120" placeholder="Ihr Alter:" />
       <p ng-show="myForm.alter.$invalid && !myForm.alter.$pristine" class="help-block">Geben Sie einen gültigen Wert ein!</p>
     </div>
 

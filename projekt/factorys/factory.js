@@ -30,7 +30,6 @@
         .then(getComplete);
 
       function getComplete(response) {
-        console.log(response.data);
 
         response.data.forEach(function (item) {
           items.push(item);
